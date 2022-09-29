@@ -1,1 +1,9 @@
 # Linear-Ridge-Regression-in-Multiple-Dimension
+
+
+We will be understanding the concept of linear regression along with the regularization parameter on the dataset given below which has multiple attributes. Medical Dataset (https://www.kaggle.com/sudhirnl7/linear-regression-tutorial/data): The medical cost dataset comprises of independent attributes like age, sex, BMI (body mass index), children, smoker, and region. The charge/cost is a dependent feature. Our goal is to predict the individual medical costs billed by the health insurance. [50 Marks]
+1. Feature Normalization: As discussed in the class, we first have to standardize all the features by subtracting with the mean and dividing by the standard deviation. Verify your technique by computing the mean and variance of the transformed data and check if the mean is 0 and variance is 1.
+2. K−Fold Cross Validation Randomly partition the data into a training, validation, and test set. Fix 20% of the instances into the test set. For the remaining data perform the below experiments with K−fold cross validation. You can take the value of K to be 10.
+3. Ridge-Regression: Here, implement your own function ridgereg(X, Y, λ) that calculates the linear least square solution with the ridge regression penalty parameter λ and return regression weights. Use gradient descent technique to find these weights. Implement predridgereg(X, weights) that returns Y given the input X with learnt weights.
+4. Plot the mean square error for each of the dataset obtained from K−fold cross validation with respect to different λ values. Explain your finding and suggest what value of λ will you choose based on the obtained plot.
+5. Plot the training error, variance and test error against different values of λ. Explain your finding and suggest what value of λ will you choose based on the obtained plot. Explain your result in the context of bias variance trade off. Does this value coincide with the previous question?
